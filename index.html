@@ -9,28 +9,28 @@
     <link href="ltmenu.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-      <ul class="ltmenu-wrapper">
-	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">1st item in the parent menu</div>
-	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item green medium-font" onclick="alert('item 1.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	    <li class="ltmenu-item submenu-item green medium-font" onclick="alert('item 1.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	  </ul>
-	</li>
+      <div class="ltmenu-wrapper">
+	<div class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">1st item in the parent menu</div>
+	  <div class="ltmenu-item">
+	    <div class="ltmenu-item submenu-item green medium-font" onclick="alert('item 1.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	    <div class="ltmenu-item submenu-item green medium-font" onclick="alert('item 1.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	  </div>
+	</div>
 	<hr class="ltmenu-div-line">
-	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">2nd item in the parent menu</div>
-	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item gree medium-font" onclick="alert('item 2.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	    <li class="ltmenu-item submenu-item green medium-font" onclick="alert('item 2.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	  </ul>
-	</li>
+	<div class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">2nd item in the parent menu</div>
+	  <div class="ltmenu-item">
+	    <div class="ltmenu-item submenu-item gree medium-font" onclick="alert('item 2.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	    <div class="ltmenu-item submenu-item green medium-font" onclick="alert('item 2.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	  </div>
+	</div>
 	<hr class="ltmenu-div-line">
-	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">3rd item in the parent menu</div>
-	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item green medium-font" onclick="alert('item 3.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	    <li class="ltmenu-item submenu-item green medium-font" onclick="alert('item 3.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></li>
-	  </ul>
-	</li>
-      </ul>
+	<div class="ltmenu-item ltmenu gray"><div class="ltmenu-header large-font">3rd item in the parent menu</div>
+	  <div class="ltmenu-item">
+	    <div class="ltmenu-item submenu-item green medium-font" onclick="alert('item 3.1');">1st item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	    <div class="ltmenu-item submenu-item green medium-font" onclick="alert('item 3.2');">2nd item in the submenu<br><div class="ltmenu-item-description gray small-font">description</div></div>
+	  </div>
+	</div>
+      </div>
   </body>
   <script>
     jQuery(".ltmenu-wrapper").ltmenu({
