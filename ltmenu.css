@@ -41,6 +41,16 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     font-size:12px;
 }
 
+/* DIVIDING LINE */
+.ltmenu-div-line {
+    height:1px;
+    width:100%;
+    border:none;
+    background-color:#CCC;
+    color: #CCC;
+}
+
+
 .ltmenu-wrapper {
     width: 300px;
     border:solid 1px #7F7F7F;
