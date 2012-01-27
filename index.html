@@ -10,29 +10,30 @@
   </head>
   <body>
       <ul class="ltmenu-wrapper">
-	<li class="ltmenu-item ltmenu gray">1st item in the parent menu
+	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header">1st item in the parent menu</div>
 	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
-	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 1.1');">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 1.2');">2nd item in the submenu</li>
 	  </ul>
 	</li>
-	<li class="ltmenu-item ltmenu gray">2nd item in the parent menu
+	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header">2nd item in the parent menu</div>
 	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
-	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 2.1');">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 2.2');">2nd item in the submenu</li>
 	  </ul>
 	</li>
-	<li class="ltmenu-item ltmenu gray">3rd item in the parent menu
+	<li class="ltmenu-item ltmenu gray"><div class="ltmenu-header">3rd item in the parent menu</div>
 	  <ul class="ltmenu-item">
-	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
-	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 3.1');">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green" onclick="alert('item 3.2');">2nd item in the submenu</li>
 	  </ul>
 	</li>
       </ul>
   </body>
   <script>
     jQuery(".ltmenu-wrapper").ltmenu({
-       open:"single"
+       open:"single",
+       openSubMenu:1
     });
   </script>
 </html>

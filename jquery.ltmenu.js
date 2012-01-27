@@ -35,10 +35,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		    $(this).children(".ltmenu-item").hide();
 		}
 
-		$(this).click(function() {
-		    $(this).toggleClass("closed").toggleClass("open");
+		$(this).children(".ltmenu-header").click(function() {
+		    $(this).parent().toggleClass("closed").toggleClass("open");
 		    if (options.open == "single") {
-			$(this).siblings(".ltmenu").each(function() {
+			$(this).parent().siblings(".ltmenu").each(function() {
 			    if ($(this).hasClass("open")) {
 				$(this).toggleClass("open").toggleClass("closed");
 				$(this).children(".ltmenu-item").each(function() {
@@ -49,7 +49,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			    }
 			});
 		    }
-		    $(this).children(".ltmenu-item").each(function() {
+		    $(this).siblings(".ltmenu-item").each(function() {
 			$(this).slideToggle('medium',function() {
 			    // Animation complete.
 			});
