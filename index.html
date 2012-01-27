@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>LTMenu Test Page</title>
+    <script src="jquery-1.7.min.js"></script>
+    <script src="jquery-ui-1.8.1.custom.min.js"></script>
+    <script src="jquery.ltmenu.js"></script>
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui-1.8.1.custom.css" rel="stylesheet" type="text/css">
+    <link href="ltmenu.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <ul class="ltmenu-wrapper">
+	<li class="ltmenu-item ltmenu gray">1st item in the parent menu
+	  <ul class="ltmenu-item">
+	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	  </ul>
+	</li>
+	<li class="ltmenu-item ltmenu gray">2nd item in the parent menu
+	  <ul class="ltmenu-item">
+	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	  </ul>
+	</li>
+	<li class="ltmenu-item ltmenu gray">3rd item in the parent menu
+	  <ul class="ltmenu-item">
+	    <li class="ltmenu-item submenu-item green">1st item in the submenu</li>
+	    <li class="ltmenu-item submenu-item green">2nd item in the submenu</li>
+	  </ul>
+	</li>
+      </ul>
+  </body>
+  <script>
+    jQuery(".ltmenu-wrapper").ltmenu({
+       open:"single"
+    });
+  </script>
+</html>
