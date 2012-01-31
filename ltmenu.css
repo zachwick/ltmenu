@@ -26,9 +26,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 .green {
     color: #337F00;
 }
+.green:hover {
+    text-decoration:underline;
+}
+
 .gray {
     color: #666666;
 }
+.gray:hover {
+    text-decoration:none !important;
+}
+
 
 /* FONT SIZING */
 .large-font {
@@ -44,7 +52,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* DIVIDING LINE */
 .ltmenu-div-line {
     height:1px;
-    width:100%;
+    width:280px;
     border:none;
     background-color:#CCC;
     color: #CCC;
@@ -61,6 +69,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     width: 300px;
     height:auto;
     cursor:pointer;
+    margin-left:10px;
 }
 
 .ltmenu .ltmenu-item {
@@ -68,12 +77,16 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 }
 
 .ltmenu-item {
+    margin-left:10px;
     cursor:pointer;
-    margin-left:0px;
     list-style-type:none;
     width: auto;
 }
 
-.ltmenu-item .submenu-item {
+.ltmenu-item-description {
+    margin-left:10px;
+}
+
+ltmenu-item .submenu-item {
 
 }
