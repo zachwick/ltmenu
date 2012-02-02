@@ -23,18 +23,28 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     var methods = {
 	init : function(options) {
 	    var options = $.extend({
+		width:"300px",
+		borderColor:" #7F7F7F",
 		open:"single",
-		openSubMenu:0
+		openSubMenu:0,
+		opener:$(this).parent(),
+		h_offset:0
 	    }, options);
 	    subMenuCounter = 0;
-	    $(this).children(".ltmenu").each(function() {
+	    var h_offset = parseInt(options.opener.css("left").substring(0,options.opener.css("left").length-2)) + options.h_offset;
+	    $(this).css("left",h_offset);
+	    var v_offset = parseInt(options.opener.css("top").substring(0,options.opener.css("top").length-2))+options.opener.height() + 2; 
+	    $(this).css("top",v_offset);
+	    $(this).children(".ltmenu-wrapper").css("width",options.width);
+	    $(this).children(".ltmenu-wrapper").css("border","solid 1px "+options.borderColor);
+	    $(this).children(".ltmenu-wrapper").children(".ltmenu").each(function() {
 		if (subMenuCounter == options.openSubMenu) {
 		    $(this).addClass("open");
 		} else {
 		    $(this).addClass("closed");
 		    $(this).children(".ltmenu-item").hide();
 		}
-
+		$(this).children(".ltmenu-header").unbind();
 		$(this).children(".ltmenu-header").click(function() {
 		    $(this).parent().toggleClass("closed").toggleClass("open");
 		    if (options.open == "single") {
