@@ -6,6 +6,7 @@
     <link href="ltmenu.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div id="super-wrapper">
       <div class="ltmenu-wrapper">
 	<div class="ltmenu-item ltmenu gray">
 	  <div class="ltmenu-header large-font">
@@ -41,9 +42,10 @@
 	  </div>
 	</div>
       </div>
+    </div>
   </body>
   <script>
-    jQuery(".ltmenu-wrapper").ltmenu({
+    jQuery("#super-wrapper").ltmenu({
        open:"single",
        openSubMenu:0
     });
